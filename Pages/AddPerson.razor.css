@@ -1,0 +1,162 @@
+.add-person-container {
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+}
+.ranking-group {
+    align-items: flex-end;
+    height: 58px;
+    min-height: 58px;
+    min-width: 425px;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.people-list {
+    height: 504px;
+    width: 268px;
+    min-width: 268px;
+    min-height: 504px;
+    position: relative;
+}
+.content {
+    height: 432px;
+    justify-content: center;
+    min-height: 432px;
+    min-width: 457px;
+    width: 100%;
+    position: relative;
+}
+.rank-text {
+    height: max-content;
+    width: 64px;
+    min-width: 64px;
+    color: rgba(0, 0, 0, 0.8657155797101449);
+    position: relative;
+}
+.buttons {
+    height: 36px;
+    width: 200px;
+    min-width: 200px;
+    min-height: 36px;
+    justify-content: space-between;
+    position: relative;
+}
+.group {
+    width: 93%;
+    min-width: 425px;
+    min-height: 432px;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+.add-person {
+    min-height: 620px;
+    min-width: 725px;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.background {
+    padding: 16px 0 0;
+    background-color: rgba(0, 0, 0, 0.04);
+    min-width: 457px;
+    min-height: 564px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.group_1 {
+    padding: 0 4px 0 0;
+    height: 92px;
+    justify-content: center;
+    width: 92px;
+    min-width: 92px;
+    min-height: 92px;
+    position: relative;
+}
+.file-upload {
+    height: 92px;
+    width: 92px;
+    min-width: 92px;
+    min-height: 92px;
+    position: relative;
+}
+.group_2 {
+    min-width: 725px;
+    min-height: 564px;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.people-add {
+    min-width: 457px;
+    min-height: 564px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.navbar {
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.content_1 {
+    position: relative;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+.avatar::part(base) {
+    color: hsla(var(--igc-gray-800));
+    background-color: hsla(var(--igc-gray-400));
+}
+.list {
+    position: relative;
+    width: 268px;
+}
+.button {
+    top: 56px;
+    left: 56px;
+    position: absolute;
+}
+.rank {
+    width: 98%;
+    margin: 8px 0 0;
+    min-width: min-content;
+    height: max-content;
+    position: relative;
+}
+.is-admin {
+    width: max-content;
+    height: max-content;
+    position: relative;
+}
+.user-input {
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+.button_1 {
+    width: 88px;
+    min-width: min-content;
+    height: max-content;
+    position: relative;
+}
+.radio {
+    padding: 8px;
+}
+.gender {
+    position: relative;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}

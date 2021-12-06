@@ -1,0 +1,153 @@
+.people-home-container {
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+}
+.background {
+    align-items: center;
+    background-color: rgba(170, 221, 255, 0.5800000000000001);
+    justify-content: center;
+    min-width: 457px;
+    min-height: 564px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.information {
+    height: 153px;
+    width: 115px;
+    min-height: 153px;
+    min-width: 115px;
+    position: relative;
+}
+.name-admin {
+    height: 28px;
+    min-height: 28px;
+    width: 115px;
+    min-width: 115px;
+    position: relative;
+}
+.pin-right {
+    height: 22px;
+    position: absolute;
+    width: 64px;
+    min-width: 64px;
+    min-height: 22px;
+    top: 7%;
+    right: 0;
+}
+.people-list {
+    height: 504px;
+    width: 268px;
+    min-width: 268px;
+    min-height: 504px;
+    position: relative;
+}
+.name {
+    width: 37%;
+    min-width: 48px;
+    height: max-content;
+    color: rgba(0, 0, 0, 0.8657155797101449);
+    position: relative;
+}
+.gender-birthday {
+    min-width: 132px;
+    height: max-content;
+    color: rgba(0, 0, 0, 0.8657155797101449);
+    width: 100%;
+    position: relative;
+}
+.people-home {
+    min-height: 620px;
+    min-width: 725px;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.group {
+    padding: 0 8px 0 0;
+    height: 92px;
+    justify-content: center;
+    width: 96px;
+    min-width: 96px;
+    min-height: 92px;
+    position: relative;
+}
+.avatar-rank {
+    height: 92px;
+    width: 96px;
+    min-width: 96px;
+    min-height: 92px;
+    position: relative;
+}
+.group_1 {
+    min-width: 725px;
+    justify-content: space-between;
+    min-height: 564px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.people-details {
+    min-width: 457px;
+    min-height: 564px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.group_2 {
+    min-height: 153px;
+    justify-content: space-between;
+    min-width: 115px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.navbar {
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.content {
+    position: relative;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+.avatar::part(base) {
+    color: hsla(var(--igc-gray-800));
+    background-color: hsla(var(--igc-gray-400));
+}
+.rank {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+}
+.admin-badge {
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+.edit {
+    right: 16px;
+    bottom: 16px;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+}
+.list {
+    position: relative;
+    width: 268px;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}

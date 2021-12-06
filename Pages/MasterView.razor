@@ -1,0 +1,71 @@
+@page "/master-view"
+@inject HttpClient HttpClient
+
+<div class="master-view-container row">
+    <IgbNavbar class="navbar" master-view-scope>
+        <div slot="start">
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">menu</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+        <div slot="end">
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">search</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">favorite</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat">
+                <span class="material-icons">more_vert</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+        <div>Screen Title</div>
+    </IgbNavbar>
+        @foreach (var item in northwindCategories)
+    {
+<IgbCard Outlined="true" class="card" master-view-scope>
+            <IgbCardHeader>
+                <h3 slot="title">
+                    
+                </h3>
+                <h5 slot="subtitle">
+                    
+                </h5>
+            </IgbCardHeader>
+            <IgbCardContent class="body-content" master-view-scope>
+                <p class="typography__body-1 text"></p>
+            </IgbCardContent>
+            <IgbCardActions class="actions-content" master-view-scope>
+                <IgbButton Variant="ButtonVariant.Flat" class="button" master-view-scope>
+                    Button
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton Variant="ButtonVariant.Flat">
+                    <span class="material-icons">favorite</span>
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton Variant="ButtonVariant.Flat">
+                    <span class="material-icons">bookmark</span>
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton Variant="ButtonVariant.Flat">
+                    <span class="material-icons">share</span>
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </IgbCardActions>
+        </IgbCard>
+    }
+</div>
+
+@code {
+    private Northwind.CategoriesType[] northwindCategories = Array.Empty<Northwind.CategoriesType>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        northwindCategories = await HttpClient.GetFromJsonAsync<Northwind.CategoriesType[]>("static-data/northwind-categories.json") ?? northwindCategories;
+    }
+}

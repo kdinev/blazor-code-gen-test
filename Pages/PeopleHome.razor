@@ -1,0 +1,91 @@
+@page "/"
+
+<div class="people-home-container row">
+    <div class="people-home column">
+        <IgbNavbar class="navbar" people-home-scope>
+            <div slot="start">
+                <span class="material-icons content icon">menu</span>
+            </div>
+            <div slot="end">
+                <span class="material-icons icon">add</span>
+            </div>
+            <div>Viewing David Cardale</div>
+        </IgbNavbar>
+        <div class="group_1 row">
+            <div class="people-details column">
+                <div class="background column">
+                    <div class="information row">
+                        <div class="group_2 column">
+                            <div class="avatar-rank row">
+                                <div class="group column">
+                                    <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" Size="SizableComponentSize.Large" class="content avatar" people-home-scope></IgbAvatar>
+                                    <IgbBadge Variant="BadgeVariant.Primary" class="rank" people-home-scope>65</IgbBadge>
+                                </div>
+                            </div>
+                            <div class="name-admin row">
+                                <p class="typography__body-1 name">Name</p>
+                                <div class="pin-right column">
+                                    <IgbBadge Variant="BadgeVariant.Primary" class="admin-badge" people-home-scope>Admin</IgbBadge>
+                                </div>
+                            </div>
+                            <p class="typography__body-2 gender-birthday">Gender - Birthdate</p>
+                        </div>
+                    </div>
+                    <IgbButton Variant="ButtonVariant.Fab" class="edit" people-home-scope>
+                        <span class="material-icons">edit</span>
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </div>
+            </div>
+            <div class="people-list column">
+                <IgbList class="list" people-home-scope>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Name</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Peter Cologne</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Adam Thiel</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Amanda Cruz</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Veronica Christensen</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Anne Marie Ferguson</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" people-home-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Jayden Christopher</div>
+                    </IgbListItem>
+                </IgbList>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+}

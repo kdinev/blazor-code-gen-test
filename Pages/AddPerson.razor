@@ -1,0 +1,108 @@
+@page "/add-person"
+
+<div class="add-person-container row">
+    <div class="add-person column">
+        <IgbNavbar class="navbar" add-person-scope>
+            <div slot="start">
+                <span class="material-icons content_1 icon">menu</span>
+            </div>
+            <div slot="end"></div>
+            <div>Adding Person</div>
+        </IgbNavbar>
+        <div class="group_2 row">
+            <div class="people-list column">
+                <IgbList class="list" add-person-scope>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">David Cardale</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Peter Cologne</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Adam Thiel</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Amanda Cruz</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Veronica Christensen</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Anne Marie Ferguson</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" add-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Jayden Christopher</div>
+                    </IgbListItem>
+                </IgbList>
+            </div>
+            <div class="people-add column">
+                <div class="background column">
+                    <div class="content row">
+                        <div class="group column">
+                            <div class="file-upload row">
+                                <div class="group_1 column">
+                                    <IgbAvatar Shape="AvatarShape.Circle" Size="SizableComponentSize.Large" class="content_1 avatar" add-person-scope>
+                                        <span class="material-icons">account_circle</span>
+                                    </IgbAvatar>
+                                    <IgbButton Variant="ButtonVariant.Flat" class="button" add-person-scope>
+                                        <span class="material-icons">add</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                </div>
+                            </div>
+                            <IgbInput DisplayType="InputType.Text" Label="Name" Placeholder="e.g. John Doe" Outlined="false" class="user-input" add-person-scope>
+                                <span slot="prefix">
+                                    <span class="material-icons icon">account_circle</span>
+                                </span>
+                            </IgbInput>
+                            <IgbDatePicker class="user-input" add-person-scope></IgbDatePicker>
+                            <IgbRadioGroup class="gender" add-person-scope>
+                                <IgbRadio class="radio" add-person-scope>Male</IgbRadio>
+                                <IgbRadio class="radio" add-person-scope>Female</IgbRadio>
+                            </IgbRadioGroup>
+                            <div class="ranking-group row">
+                                <p class="typography__body-1 rank-text">Ranking</p>
+                                <span class="rank">Slider not yet available in Blazor</span>
+                            </div>
+                            <IgbCheckbox class="is-admin" add-person-scope>Is Admin</IgbCheckbox>
+                            <div class="buttons row">
+                                <IgbButton Variant="ButtonVariant.Contained" class="button_1" add-person-scope>
+                                    SAVE
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                                <IgbButton Variant="ButtonVariant.Contained" class="button_1" add-person-scope>
+                                    CANCEL
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+}

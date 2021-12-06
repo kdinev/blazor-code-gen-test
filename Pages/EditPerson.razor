@@ -1,0 +1,115 @@
+@page "/edit-person"
+
+<div class="edit-person-container row">
+    <div class="edit-person column">
+        <IgbNavbar class="navbar" edit-person-scope>
+            <div slot="start">
+                <span class="material-icons content_1 icon">menu</span>
+            </div>
+            <div slot="end">
+                <span class="material-icons icon">add</span>
+            </div>
+            <div>Editing David Cardale</div>
+        </IgbNavbar>
+        <div class="group_3 row">
+            <div class="people-list column">
+                <IgbList class="list" edit-person-scope>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">David Cardale</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Peter Cologne</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Adam Thiel</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Amanda Cruz</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Veronica Christensen</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Anne Marie Ferguson</div>
+                    </IgbListItem>
+                    <IgbListItem>
+                        <div slot="start">
+                            <IgbAvatar Initials="NA" Shape="AvatarShape.Circle" class="avatar" edit-person-scope></IgbAvatar>
+                        </div>
+                        <div slot="title">Jayden Christopher</div>
+                    </IgbListItem>
+                </IgbList>
+            </div>
+            <div class="people-edit column">
+                <div class="background column">
+                    <div class="content row">
+                        <div class="group_1 column">
+                            <div class="file-upload row">
+                                <div class="group_2 column">
+                                    <IgbAvatar Shape="AvatarShape.Circle" Size="SizableComponentSize.Large" class="content_1 avatar" edit-person-scope>
+                                        <span class="material-icons">account_circle</span>
+                                    </IgbAvatar>
+                                    <IgbButton Variant="ButtonVariant.Flat" class="button" edit-person-scope>
+                                        <span class="material-icons">add</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                </div>
+                            </div>
+                            <IgbInput DisplayType="InputType.Text" Label="Name" Placeholder="Placeholder" Outlined="false" class="user-input" edit-person-scope>
+                                <span slot="prefix">
+                                    <span class="material-icons icon">account_circle</span>
+                                </span>
+                            </IgbInput>
+                            <IgbDatePicker class="user-input" edit-person-scope></IgbDatePicker>
+                            <IgbRadioGroup class="gender" edit-person-scope>
+                                <IgbRadio class="radio" edit-person-scope>Male</IgbRadio>
+                                <IgbRadio class="radio" edit-person-scope>Female</IgbRadio>
+                            </IgbRadioGroup>
+                            <div class="ranking-group row">
+                                <p class="typography__body-1 rank-text">Ranking</p>
+                                <span class="rank">Slider not yet available in Blazor</span>
+                            </div>
+                            <IgbCheckbox class="is-admin" edit-person-scope>Is Admin</IgbCheckbox>
+                            <div class="buttons row">
+                                <IgbButton Variant="ButtonVariant.Contained" class="button_3" edit-person-scope>
+                                    SAVE
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                                <IgbButton Variant="ButtonVariant.Contained" class="button_3" edit-person-scope>
+                                    CANCEL
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                                <IgbButton Variant="ButtonVariant.Contained" class="button_3" edit-person-scope>
+                                    DELETE
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="dialog">Dialog Window not yet available in Blazor</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+}
